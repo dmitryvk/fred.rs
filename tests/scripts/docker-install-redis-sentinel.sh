@@ -16,4 +16,4 @@ do
 done
 
 echo "Note: this requires docker, docker-compose, and redis >=6.2 to work reliably."
-docker-compose -f ./tests/sentinel-docker-compose.yml up -d
+docker compose -f ./tests/sentinel-docker-compose.yml up -d

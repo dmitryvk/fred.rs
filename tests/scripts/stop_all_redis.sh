@@ -19,4 +19,4 @@ echo "Stopping redis processes..."
 pgrep redis | sudo xargs kill -9
 
 echo "Stopping sentinel redis in docker..."
-docker-compose -f ./tests/sentinel-docker-compose.yml stop
+docker compose -f ./tests/sentinel-docker-compose.yml stop

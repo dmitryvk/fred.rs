@@ -39,7 +39,7 @@ This also shows how to configure the client with tracing enabled against a local
 A [docker compose](../../tests/docker/compose/jaeger.yml) file is included that will run a local Jaeger instance.
 
 ```
-docker-compose -f /path/to/fred/tests/docker/compose/jaeger.yml up
+docker compose -f /path/to/fred/tests/docker/compose/jaeger.yml up
 ```
 
 Then navigate to <http://localhost:16686>.

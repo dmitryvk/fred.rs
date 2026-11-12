@@ -10,7 +10,7 @@ fi
 # echo "-1" | sudo tee /proc/sys/kernel/perf_event_paranoid
 echo $FEATURES
 
-docker-compose -f ../../tests/docker/compose/cluster.yml \
+docker compose -f ../../tests/docker/compose/cluster.yml \
   -f ../../tests/docker/compose/centralized.yml \
   -f ../../tests/docker/compose/unix-socket.yml \
   -f ./docker-compose.yml \

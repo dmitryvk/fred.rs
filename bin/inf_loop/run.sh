@@ -1,6 +1,6 @@
 #!/bin/bash
 
-TEST_ARGV="$@" docker-compose \
+TEST_ARGV="$@" docker compose \
   -f ../../tests/docker/compose/cluster.yml \
   -f ../../tests/docker/compose/centralized.yml \
   -f ./docker-compose.yml \
