@@ -7,7 +7,7 @@ networks:
 services:
   redis-main:
     container_name: "redis-main"
-    image: 'bitnami/redis:${REDIS_VERSION}'
+    image: 'bitnamilegacy/redis:${REDIS_VERSION}'
     environment:
       - 'REDIS_PORT_NUMBER=${FRED_REDIS_CENTRALIZED_PORT}'
       - 'ALLOW_EMPTY_PASSWORD=yes'

@@ -7,7 +7,7 @@ networks:
 services:
   redis-sentinel-main:
     container_name: "redis-sentinel-main"
-    image: 'bitnami/redis:${REDIS_VERSION}'
+    image: 'bitnamilegacy/redis:${REDIS_VERSION}'
     environment:
       - 'REDIS_PORT_NUMBER=6380'
       - 'ALLOW_EMPTY_PASSWORD=yes'
@@ -21,7 +21,7 @@ services:
       - '../../../tests/users.acl:/opt/bitnami/redis/mounted-etc/users.acl'
   redis-sentinel-replica:
     container_name: "redis-sentinel-replica"
-    image: 'bitnami/redis:${REDIS_VERSION}'
+    image: 'bitnamilegacy/redis:${REDIS_VERSION}'
     depends_on:
       - redis-sentinel-main
     environment:

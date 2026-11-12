@@ -7,7 +7,7 @@ networks:
 services:
   redis-cluster-1:
     container_name: "redis-cluster-1"
-    image: 'bitnami/redis-cluster:${REDIS_VERSION}'
+    image: 'bitnamilegacy/redis-cluster:${REDIS_VERSION}'
     environment:
       - 'ALLOW_EMPTY_PASSWORD=yes'
       - 'REDIS_PORT_NUMBER=${FRED_REDIS_CLUSTER_PORT}'
@@ -22,7 +22,7 @@ services:
       - '../../../tests/docker/overrides/default.conf:/opt/bitnami/redis/mounted-etc/overrides.conf'
   redis-cluster-2:
     container_name: "redis-cluster-2"
-    image: 'bitnami/redis-cluster:${REDIS_VERSION}'
+    image: 'bitnamilegacy/redis-cluster:${REDIS_VERSION}'
     environment:
       - 'ALLOW_EMPTY_PASSWORD=yes'
       - 'REDIS_PORT_NUMBER=${FRED_REDIS_CLUSTER_PORT}'
@@ -37,7 +37,7 @@ services:
       - '../../../tests/docker/overrides/default.conf:/opt/bitnami/redis/mounted-etc/overrides.conf'
   redis-cluster-3:
     container_name: "redis-cluster-3"
-    image: 'bitnami/redis-cluster:${REDIS_VERSION}'
+    image: 'bitnamilegacy/redis-cluster:${REDIS_VERSION}'
     environment:
       - 'ALLOW_EMPTY_PASSWORD=yes'
       - 'REDIS_PORT_NUMBER=${FRED_REDIS_CLUSTER_PORT}'
@@ -52,7 +52,7 @@ services:
       - '../../../tests/docker/overrides/default.conf:/opt/bitnami/redis/mounted-etc/overrides.conf'
   redis-cluster-4:
     container_name: "redis-cluster-4"
-    image: 'bitnami/redis-cluster:${REDIS_VERSION}'
+    image: 'bitnamilegacy/redis-cluster:${REDIS_VERSION}'
     environment:
       - 'ALLOW_EMPTY_PASSWORD=yes'
       - 'REDIS_PORT_NUMBER=${FRED_REDIS_CLUSTER_PORT}'
@@ -67,7 +67,7 @@ services:
       - '../../../tests/docker/overrides/default.conf:/opt/bitnami/redis/mounted-etc/overrides.conf'
   redis-cluster-5:
     container_name: "redis-cluster-5"
-    image: 'bitnami/redis-cluster:${REDIS_VERSION}'
+    image: 'bitnamilegacy/redis-cluster:${REDIS_VERSION}'
     environment:
       - 'ALLOW_EMPTY_PASSWORD=yes'
       - 'REDIS_PORT_NUMBER=${FRED_REDIS_CLUSTER_PORT}'
@@ -88,7 +88,7 @@ services:
       - redis-cluster-3
       - redis-cluster-4
       - redis-cluster-5
-    image: 'bitnami/redis-cluster:${REDIS_VERSION}'
+    image: 'bitnamilegacy/redis-cluster:${REDIS_VERSION}'
     environment:
       - 'ALLOW_EMPTY_PASSWORD=yes'
       - 'REDIS_PORT_NUMBER=${FRED_REDIS_CLUSTER_PORT}'

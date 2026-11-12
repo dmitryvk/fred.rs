@@ -1,6 +1,6 @@
 # https://github.com/docker/for-mac/issues/5548#issuecomment-1029204019
 # FROM rust:1.77-slim-buster
-FROM rust:1.85-slim-bullseye
+FROM rust:1.89-slim-bookworm
 
 WORKDIR /project
 
