@@ -9,5 +9,5 @@ docker compose -f tests/docker/compose/cluster-tls.yml \
   -f tests/docker/compose/redis-stack.yml \
   -f tests/docker/compose/centralized.yml \
   -f tests/docker/compose/valkey-cluster.yml \
-  -f tests/docker/compose/base.yml run --rm debug
+  -f tests/docker/compose/base.yml run --build --rm debug
 
