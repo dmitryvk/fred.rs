@@ -3,20 +3,14 @@
 use async_trait::async_trait;
 use bytes_utils::Str;
 use fred::{prelude::*, types::Resolve};
-use hickory_resolver::{
-  config::{ResolverConfig, ResolverOpts},
-  TokioAsyncResolver,
-};
+use hickory_resolver::{net::runtime::TokioRuntimeProvider, Resolver};
 use std::{net::SocketAddr, sync::Arc};
 
-pub struct HickoryDnsResolver(TokioAsyncResolver);
+pub struct HickoryDnsResolver(Resolver<TokioRuntimeProvider>);
 
 impl Default for HickoryDnsResolver {
   fn default() -> Self {
-    HickoryDnsResolver(TokioAsyncResolver::tokio(
-      ResolverConfig::default(),
-      ResolverOpts::default(),
-    ))
+    HickoryDnsResolver(Resolver::builder_tokio().unwrap().build().unwrap())
   }
 }
 

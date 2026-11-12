@@ -329,8 +329,8 @@ impl From<trust_dns_resolver::error::ResolveError> for Error {
 #[doc(hidden)]
 #[cfg(feature = "dns")]
 #[cfg_attr(docsrs, doc(cfg(feature = "dns")))]
-impl From<hickory_resolver::error::ResolveError> for Error {
-  fn from(e: hickory_resolver::error::ResolveError) -> Self {
+impl From<hickory_resolver::net::NetError> for Error {
+  fn from(e: hickory_resolver::net::NetError) -> Self {
     Error::new(ErrorKind::IO, format!("{:?}", e))
   }
 }
