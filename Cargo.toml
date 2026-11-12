@@ -195,7 +195,7 @@ url = "2.4"
 urlencoding = "2.1"
 # DNS Features
 trust-dns-resolver = { version = "0.23", optional = true, features = ["tokio"] }
-hickory-resolver = { version = "0.24.1", optional = true, features = ["tokio"] }
+hickory-resolver = { version = "0.26.3", optional = true, features = ["tokio"] }
 fred-macros = "0.1"
 # Tokio  Dependencies
 tokio = { version = "1.34", features = [
