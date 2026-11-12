@@ -1,4 +1,4 @@
-## 10.1.0 (forked)
+## 10.1.1
 
 * Update `hickory-resolver` crate
 
