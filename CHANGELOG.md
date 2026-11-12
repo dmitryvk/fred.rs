@@ -1,3 +1,7 @@
+## 10.1.0 (forked)
+
+* Update `hickory-resolver` crate
+
 ## 10.1.0
 
 * Add `DynamicPool` interface
